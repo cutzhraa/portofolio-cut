@@ -23,10 +23,10 @@ PROJECTS = [
      "Aplikasi untuk mengatur rutinitas dan memantau perawatan hewan peliharaan.",
      "An app for organizing routines and tracking pet care.",
      "pawroutine.png", "https://pawroutineku.vercel.app"),
-    ("Mouri Minds", "BELAJAR BAHASA", "LANGUAGE LEARNING",
-     "Platform belajar bahasa Jepang interaktif dengan audio karakter.",
-     "An interactive Japanese learning platform with character audio.",
-     "conan.png", "https://mouri-minds.vercel.app"),
+    ("PocketSmart", "MANAJEMEN KEUANGAN", "PERSONAL FINANCE",
+    "Aplikasi pengelola keuangan pribadi untuk mencatat pemasukan, pengeluaran, dan memantau saldo secara otomatis.",
+    "A personal finance application for recording income and expenses, with automatic balance tracking.",
+    "pocketsmart.png", "https://github.com/cutzhraa/pocketsmart"),
     ("Dupcut", "UTILITAS WEB", "WEB UTILITY",
      "Utilitas browser untuk mengelola file, menghapus duplikat, dan mengedit gambar.",
      "A browser utility for managing files, removing duplicates, and editing images.",
@@ -125,15 +125,17 @@ def make_pages(en=False):
     heading(d, "CUT AZIZAH ZAHRA", (105, 350), 45)
     d.line((108, 430, 590, 430), fill=BLUE, width=5)
     para(d, "Informatics graduate · Samudra University" if en else "Lulusan Informatika · Universitas Samudra", (108, 470), 770, 26)
-    d.text((108, 570), "WEB DEVELOPMENT" if en else "PENGEMBANGAN WEB", font=ft(20, True), fill=RUST)
+    d.text((108, 570), "INFORMATION TECHNOLOGY" if en else "TEKNOLOGI INFORMASI", font=ft(20, True), fill=RUST)
     d.text((108, 610), "2026", font=ft(17, True), fill=MUTED)
     result.append((im, links))
 
     # 2 — About and education
     im, d, links = page(2, "About me" if en else "Tentang saya")
     heading(d, "Hello, I'm Cut." if en else "Halo, saya Cut.", (85, 145), 52, BLUE)
-    bio = ("I am an Informatics graduate from Samudra University with an interest in modern web development. I enjoy turning creative ideas into functional applications, including a pet-care tracker, a language-learning platform, and browser-based utilities. I am curious about new tools and keep learning as technology evolves." if en else
-           "Saya lulusan S1 Informatika Universitas Samudra yang tertarik pada pengembangan web modern. Saya senang mengubah ide kreatif menjadi aplikasi fungsional seperti pemantau perawatan hewan, platform belajar bahasa, dan utilitas berbasis browser. Saya antusias mengeksplorasi tools baru dan terus belajar mengikuti perkembangan teknologi.")
+    bio = (
+    "I am an Informatics graduate from Samudra University with an interest in information technology, particularly application development, database management, and computer systems. I have basic knowledge of HTML, CSS, PHP, JavaScript, MySQL, and Linux. I have worked on web-based projects during my studies and completed an internship at the Department of Communication and Informatics. I am able to work in a team, eager to learn, and responsible in completing tasks."
+    if en else
+    "Saya merupakan lulusan S1 Informatika Universitas Samudra yang memiliki ketertarikan di bidang teknologi informasi, khususnya pengembangan aplikasi, pengelolaan database, dan sistem komputer. Memiliki pemahaman dasar mengenai HTML, CSS, PHP, JavaScript, MySQL, serta Linux. Terbiasa mengerjakan proyek berbasis web selama masa perkuliahan dan memiliki pengalaman magang di Dinas Komunikasi dan Informatika. Mampu bekerja sama dalam tim, memiliki kemauan untuk belajar, serta bertanggung jawab dalam menyelesaikan pekerjaan.")
     para(d, bio, (90, 240), 820, 25, MUTED, 1.5, justify=True)
     d.rounded_rectangle((86, 630, 1000, 790), radius=18, fill=PALE)
     d.text((122, 660), "EDUCATION" if en else "PENDIDIKAN", font=ft(16, True), fill=RUST)
@@ -147,7 +149,17 @@ def make_pages(en=False):
     heading(d, "What I bring" if en else "Keahlian yang saya miliki", (85, 150), 50, BLUE)
     d.rounded_rectangle((85, 255, 1515, 770), radius=22, fill=PALE, outline="#dbe2f0", width=2)
     d.text((125, 295), "HARD SKILLS", font=ft(18, True), fill=TEAL)
-    hard = ["HTML & CSS", "PHP", "React", "Next.js", "Tailwind CSS", "Linux", "Jaringan komputer" if not en else "Computer networking"]
+    hard = [
+    "HTML & CSS",
+    "JavaScript",
+    "PHP",
+    "MySQL",
+    "Linux",
+    "React",
+    "Next.js",
+    "Tailwind CSS",
+    "Jaringan komputer" if not en else "Computer networking"
+]
     for i, skill in enumerate(hard):
         row, col = divmod(i, 4)
         x, y = 125 + col * 345, 375 + row * 130
