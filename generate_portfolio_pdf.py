@@ -239,7 +239,7 @@ def make_pages(en=False):
     im.paste(certificate, (82 + (688 - certificate.width)//2, 355 + (420 - certificate.height)//2))
     contacts = [
         ("LINKEDIN", "linkedin.com/in/cut-azizah-zahra-a51405437", "https://id.linkedin.com/in/cut-azizah-zahra-a51405437"),
-        ("GITHUB", "github.com/cutzhraa", "https://github.com/cutzhraa"),
+        ("GITHUB", "github.com/cutzhraa", "https://github.com/cutzhraa/pocketsmart/releases/latest"),
     ]
     for i, (label, text, url) in enumerate(contacts):
         x, y = 830, 365 + i * 145
