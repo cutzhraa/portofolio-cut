@@ -26,7 +26,12 @@ File hasil build tersedia di folder `dist/`.
 
 ## Unduh portofolio PDF
 
-PDF satu halaman tersedia di `public/portfolio-cut-azizah-zahra.pdf` dan dapat diunduh dari tombol di website.
+Portofolio PDF delapan slide berformat landscape tersedia dalam bahasa Indonesia dan English. Tombol unduh di website mengikuti bahasa yang sedang dipilih.
+
+- Indonesia: `public/portfolio-cut-azizah-zahra.pdf`
+- English: `public/portfolio-cut-azizah-zahra-en.pdf`
+
+PDF dibuat menggunakan `python generate_portfolio_pdf.py` (memerlukan Pillow).
 
 ## Teknologi
 
