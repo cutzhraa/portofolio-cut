@@ -26,7 +26,7 @@ PROJECTS = [
     ("PocketSmart", "MANAJEMEN KEUANGAN", "PERSONAL FINANCE",
     "Aplikasi pengelola keuangan pribadi untuk mencatat pemasukan, pengeluaran, dan memantau saldo secara otomatis.",
     "A personal finance application for recording income and expenses, with automatic balance tracking.",
-    "pocketsmart.png", "https://github.com/cutzhraa/pocketsmart"),
+    "pocketsmart.png", "https://github.com/cutzhraa/pocketsmart/releases/latest"),
     ("Dupcut", "UTILITAS WEB", "WEB UTILITY",
      "Utilitas browser untuk mengelola file, menghapus duplikat, dan mengedit gambar.",
      "A browser utility for managing files, removing duplicates, and editing images.",
